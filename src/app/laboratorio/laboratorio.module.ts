@@ -5,6 +5,7 @@ import { ExamenesComponent } from './pages/examenes/examenes.component';
 import { ResultadosComponent } from './pages/resultados/resultados.component';
 import { ExamenComponent } from './pages/examen/examen.component';
 import { LaboratorioRoutingModule } from './laboratorio-routing.module';
+import { InicioComponent } from './pages/inicio/inicio.component';
 
 
 
@@ -13,7 +14,8 @@ import { LaboratorioRoutingModule } from './laboratorio-routing.module';
     HomeComponent,
     ExamenesComponent,
     ResultadosComponent,
-    ExamenComponent
+    ExamenComponent,
+    InicioComponent
   ],
   imports: [
     CommonModule,LaboratorioRoutingModule

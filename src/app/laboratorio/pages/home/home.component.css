@@ -1,0 +1,91 @@
+/** footer  pasar todo a ingles*/
+
+
+
+.iconos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iconos-centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+@media (max-width: 600px) {
+
+    .icon{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.icon{
+    width: 65px;
+    height: 65px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all .4s;
+}
+
+.icon:nth-child(1):hover{
+    box-shadow: 0px 0px 0px 10px #007bff ;
+}
+
+.icon:nth-child(2):hover{
+   box-shadow: 0px 0px 0px 10px #007bff;
+}
+
+.icon:nth-child(3):hover{
+    box-shadow: 0px 0px 0px 10px #007bff ;
+}
+.icon:nth-child(4):hover{
+    box-shadow: 0px 0px 0px 10px #007bff;
+}
+.icon:nth-child(5):hover{
+    box-shadow: 0px 0px 0px 10px #007bff ;
+}
+
+
+.fa-facebook {
+    color: white; 
+}
+
+.fa-twitter{
+    color: white; 
+}
+
+.fa-phone-volume{
+    color: white; 
+}
+
+.fa-instagram{
+    color: white; 
+}
+
+.fa-map-location-dot{
+    color: white; 
+}
+
+
+.color{
+    font-size: 80px;
+    background: rgba(0, 0, 0, 0.4);
+    margin: 0;
+    color: white;
+    padding: 15px 30px 15px 30px;
+    display: inline-block;
+    text-align: center;
+}
+
+.navbar-brand{
+    text-decoration:none; 
+  color: #0062cc;
+  border-bottom:2px solid #0062cc;
+}
+
+
+
