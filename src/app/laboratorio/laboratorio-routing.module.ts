@@ -3,14 +3,16 @@ import { RouterModule, Routes } from '@angular/router';
 import { ExamenComponent } from './pages/examen/examen.component';
 import { ExamenesComponent } from './pages/examenes/examenes.component';
 import { HomeComponent } from './pages/home/home.component';
+import { InicioComponent } from './pages/inicio/inicio.component';
 import { ResultadosComponent } from './pages/resultados/resultados.component';
 
 
 const routes: Routes = [
   {
     path: '',
+    component : HomeComponent,
     children: [
-      {path: 'home', component: HomeComponent},
+      {path: 'inicio', component: InicioComponent},
       {path: 'resultados', component: ResultadosComponent},
       {path: 'examen', component: ExamenComponent},
       {path: 'examenes', component: ExamenesComponent},

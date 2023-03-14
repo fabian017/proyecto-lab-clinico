@@ -1,0 +1,29 @@
+/** inicio */
+
+header{
+    background-image: red;
+    height: 100vh;
+    background-size: cover;
+    margin: 0;
+}
+
+.color{
+    font-size: 80px;
+    background: rgba(0, 0, 0, 0.4);
+    margin: 0;
+    color: white;
+    padding: 15px 30px 15px 30px;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.box-part{
+    background:#FFF;
+    border-radius:0;
+    padding:60px 10px;
+    margin:30px 0px;
+}
+.text{
+    margin:20px 0px;
+}

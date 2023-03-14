@@ -1,1 +1,56 @@
-<p>home works!</p>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Lab Clinico GRG</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Nosotros</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Servicios
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Examen de glucemia</a>
+              <a class="dropdown-item" href="#">Servicio De Mamografía</a>
+              <a class="dropdown-item" href="#">Conteo sanguíneo completo (CSC)</a>
+              <a class="dropdown-item" href="#">Panel metabólico básico</a>
+            </div>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Resultados</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Login</button>
+      </form>
+    </div>
+  </nav>
+
+  <router-outlet> </router-outlet>
+
+  <footer class="no-margin bg-dark">
+    <div class="contenedor">
+    <div class="iconos">
+       <div class="iconos-centrar icon">
+        <i class="fab fa-facebook fa-2x"></i>
+        </div>
+        <div class="iconos-centrar icon">
+          <i class="fab fa-twitter fa-2x"></i>
+        </div>
+        <div class="iconos-centrar icon">
+          <i class="fa-solid fa-phone-volume fa-2x"></i>
+        </div>
+        <div class="iconos-centrar icon">
+        <i class="fab fa-instagram fa-2x"></i>
+        </div>
+        <div class="iconos-centrar icon">
+          <i class="fas fa-solid fa-map-location-dot fa-2x"></i>
+       </div>
+    </div>
+ </div>        
+</footer> 
+
