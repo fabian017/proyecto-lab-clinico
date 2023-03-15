@@ -9,7 +9,7 @@
   .register-photo .image-holder {
     display:table-cell;
     width:auto;
-    background:red;
+    background:url(./microLogin.jpg);
     background-size:cover;
   }
   

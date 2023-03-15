@@ -1,10 +1,8 @@
 /** inicio */
 
 header{
-    background-image: red;
-    height: 100vh;
+    background-image: url(./creatinaOrina.jpg);
     background-size: cover;
-    margin: 0;
 }
 
 .color{
@@ -19,11 +17,15 @@ header{
 
 
 .box-part{
-    background:#FFF;
-    border-radius:0;
+    background:rgba(248, 248, 248, 0.5);
+    border-radius:10px;
     padding:60px 10px;
-    margin:30px 0px;
+    margin:0px 0px 30px;
 }
 .text{
     margin:20px 0px;
+}
+
+h2{
+    padding-top: 30px;
 }
