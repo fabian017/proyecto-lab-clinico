@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { LoguearService } from '../../service/loguear.service';
+import { ExamenService } from 'src/app/admin/services/examen.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +10,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  loggg : boolean = false
+  salir : boolean = false
+  listExamn : any;
+  AdminFijo = localStorage.getItem('role')
+  logueado = Boolean(localStorage.getItem('islogeado'))
+
+
+
+  constructor(private loginName:LoguearService,private obtenerNombre:ExamenService,private router:Router) {
+    console.log(this.logueado)
+  }
 
   ngOnInit(): void {
+    if(localStorage.getItem("islogeado")== null){
+    this.loginName.getOrganizacionId().subscribe(
+      (data) => {this.loggg= data,localStorage.setItem('islogeado',data.toString())}
+    )}
+    this.obtenerNombre.getExam().subscribe(
+      (data)=> {this.listExamn=data,console.log(data)}
+    )
   }
+
+
+  Salir(){
+    localStorage.clear()
+    this.router.navigate(['/auth/login'])
+  }
+
 
 }

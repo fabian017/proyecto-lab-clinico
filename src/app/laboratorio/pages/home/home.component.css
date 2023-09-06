@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 @media (max-width: 600px) {
 
@@ -51,23 +51,23 @@
 
 
 .fa-facebook {
-    color: white; 
+    color: white;
 }
 
 .fa-twitter{
-    color: white; 
+    color: white;
 }
 
 .fa-phone-volume{
-    color: white; 
+    color: white;
 }
 
 .fa-instagram{
-    color: white; 
+    color: white;
 }
 
 .fa-map-location-dot{
-    color: white; 
+    color: white;
 }
 
 
@@ -82,7 +82,7 @@
 }
 
 .navbar-brand{
-  text-decoration:none; 
+  text-decoration:none;
   color: #0062cc;
   border-bottom:2px solid #0062cc;
 }
@@ -95,5 +95,6 @@
 .servicios:hover{
     color: rgba(255,255,255,.75);
 }
+
 
 

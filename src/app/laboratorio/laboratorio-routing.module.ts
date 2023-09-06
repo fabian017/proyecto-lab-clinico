@@ -5,6 +5,7 @@ import { ExamenesComponent } from './pages/examenes/examenes.component';
 import { HomeComponent } from './pages/home/home.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { ResultadosComponent } from './pages/resultados/resultados.component';
+import { PermisosGuard } from '../guards/permisos.guard';
 
 
 const routes: Routes = [
@@ -13,7 +14,7 @@ const routes: Routes = [
     component : HomeComponent,
     children: [
       {path: 'inicio', component: InicioComponent},
-      {path: 'resultados', component: ResultadosComponent},
+      {path: 'resultados', component: ResultadosComponent,canActivate : [PermisosGuard]},
       {path: 'examen', component: ExamenComponent},
       {path: 'examenes', component: ExamenesComponent},
       {path: '**', redirectTo: 'home'}
