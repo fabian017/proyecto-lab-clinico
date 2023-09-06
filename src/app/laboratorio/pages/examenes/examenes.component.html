@@ -3,14 +3,14 @@
 
 
           <div class="cont-padre">
-            <div class="contenedor_servicios">
+            <div *ngFor="let i of examenes" class="contenedor_servicios">
                 <div class="box">
                     <img src="assets/img/cancerMama.jpeg" alt="">
                 </div>
                 <div class="box-datos">
-                    <h1>Cáncer Mama/Ovario - Gen BRCA2 (NGS)</h1>
+                    <h1>{{i.name}}</h1>
 
-                    <p>El gen BRCA2 es un gen que ayuda a reparar el ADN dañado. Las mutaciones en este gen pueden aumentar el riesgo de desarrollar cáncer de mama .</p>
+                    <p>{{i.function_description}}</p>
                 </div>
             </div>
             <div class="contenedor_servicios">
@@ -90,4 +90,4 @@
 
         </div>
     </div>
- 
+
