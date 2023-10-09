@@ -12,6 +12,8 @@
           <div class="form-group">
             <div class="btn btn-primary btn-block" type="submit" (click)="login()">Iniciar sesion</div>
             </div>
+            <div *ngIf="error" class="alert alert-danger">Usuario o contraseña incorrectos.</div>
+
             <a routerLink="/auth/registro"class="already">No tienes una cuenta? registrate ahora.</a></form>
         </form>
     </div>

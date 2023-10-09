@@ -11,7 +11,7 @@ import { LoguearService } from 'src/app/laboratorio/service/loguear.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
+  error:boolean=false;
   loginForm!:FormGroup;
   constructor(private fb:FormBuilder,private loginService:AuthService,private router: Router,private loginName:LoguearService) { }
 
@@ -37,16 +37,16 @@ export class LoginComponent implements OnInit {
      localStorage.setItem("role",respuesta.user.role)
      this.loginName.setOrganizacionId(true);
      localStorage.setItem("sub",respuesta.user.id)
-     console.log("entrando")
+      localStorage.setItem("islogeado","true")
      if(respuesta.user.role=='ADMIN'){
       this.router.navigate(['/admin/registrar-examen'])
-      console.log("entrando if")
      }
 
 
     }
     },
     (error) => {
+      this.error=true;
       console.error('Error en la solicitud:', error); // Manejo de errores, imprime en caso de que ocurra algún error
     }
   );
