@@ -23,8 +23,8 @@ export class RegistrarExamenComponent {
   initForm():FormGroup{
   return this.fb.group({
   name:['',[Validators.required,Validators.minLength(12)]],
-  id:['',[Validators.required,Validators.minLength(10)]],
-  function_description:['',[Validators.required,Validators.maxLength(30)]],
+  id:['',[Validators.required,Validators.minLength(2)]],
+  function_description:['',[Validators.required,Validators.maxLength(700)]],
   });
   }
 
@@ -40,7 +40,7 @@ export class RegistrarExamenComponent {
 
     this.examenServices.registerExam(data).subscribe(
       (
-        respuesta
+        respuesta:any
       )=>{this.register.reset(),alert('Examen registrado')}
     )
   }

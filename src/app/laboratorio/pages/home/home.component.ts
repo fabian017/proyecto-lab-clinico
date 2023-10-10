@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   salir : boolean = false
   listExamn : any;
   AdminFijo = localStorage.getItem('role')
-  logueado = Boolean(localStorage.getItem('islogeado'))
+  logueado = localStorage.getItem('islogeado')
 
 
 
@@ -25,10 +25,10 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     if(localStorage.getItem("islogeado")== null){
     this.loginName.getOrganizacionId().subscribe(
-      (data) => {this.loggg= data,localStorage.setItem('islogeado',data.toString())}
+      (data:any) => {this.loggg= data}
     )}
     this.obtenerNombre.getExam().subscribe(
-      (data)=> {this.listExamn=data,console.log(data)}
+      (data:any)=> {this.listExamn=data}
     )
   }
 

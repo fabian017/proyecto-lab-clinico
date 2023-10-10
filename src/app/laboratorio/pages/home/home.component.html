@@ -27,8 +27,8 @@
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <span *ngIf="logueado" class="btn btn-outline-primary my-2 my-sm-0">Bienvenido!</span>
-        <span *ngIf="logueado" (click)="Salir()" class="btn btn-outline-primary my-2 my-sm-0">Salir</span>
+        <span *ngIf="logueado=='true'" class="btn btn-outline-primary my-2 my-sm-0">Bienvenido!</span>
+        <span *ngIf="logueado=='true'" (click)="Salir()" class="btn btn-outline-primary my-2 my-sm-0">Salir</span>
 
         <button *ngIf="!logueado" class="btn btn-outline-primary my-2 my-sm-0" type="submit" > <a routerLink="/auth/login">Login</a> </button>
       </form>

@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  url: 'https://lab-clinico-main.onrender.com/',
+  production: false
 };
