@@ -37,26 +37,16 @@ export class LoginComponent implements OnInit {
      localStorage.setItem("role",respuesta.user.role)
      this.loginName.setOrganizacionId(true);
      localStorage.setItem("sub",respuesta.user.id)
-<<<<<<< HEAD
-     console.log("entrando")
-     if(respuesta.user.role=='ADMIN'){
-      this.router.navigate(['/admin/registrar-examen'])
-      console.log("entrando if")
-=======
       localStorage.setItem("islogeado","true")
      if(respuesta.user.role=='ADMIN'){
       this.router.navigate(['/admin/registrar-examen'])
->>>>>>> temp-branch
      }
 
 
     }
     },
     (error) => {
-<<<<<<< HEAD
-=======
       this.error=true;
->>>>>>> temp-branch
       console.error('Error en la solicitud:', error); // Manejo de errores, imprime en caso de que ocurra algún error
     }
   );
